@@ -1,0 +1,112 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.search {
+  width: 30rem;
+  margin: 2rem auto;
+  text-align: right;
+  position: relative;
+}
+.search-box {
+  border: 4px solid transparent;
+  border-radius: 2px;
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem;
+  transition: width 0.3s;
+  border: 4px solid #08a1b6;
+}
+.search-result {
+  display: block;
+  list-style: none;
+  width: 30rem;
+  transition: width 0.3s;
+  margin: auto;
+  padding: 0;
+  position: relative;
+}
+.search-result li {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  border-radius: 2px;
+  text-align: left;
+  background: lightblue;
+}
+.search-result li:hover {
+  font-weight: bold;
+  color: #00b4cc;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.no-search-result {
+  text-align: left;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  position: relative;
+}
+.grid-item {
+  height: 330px;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.grid-item > a {
+  text-decoration: none;
+  color: black;
+}
+.user-link {
+  position: absolute;
+  bottom: 0;
+}
+.comment-list {
+  margin-top: 20px;
+}
+.comment {
+  padding: 20px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+.user-details {
+  margin-top: 20px;
+}
+.user-meta {
+  padding: 5px;
+}
+.company-meta {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #0e83cd;
+  color: white;
+}
