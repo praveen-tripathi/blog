@@ -15,7 +15,7 @@ const Comments = ({ postId }) => {
 
   useEffect(() => {
     fetchComment(postId);
-  }, []);
+  }, [postId]);
 
   return (
     <div className="comment-list">
@@ -23,7 +23,7 @@ const Comments = ({ postId }) => {
       {!comments.length
         ? "Loading comments..."
         : comments.map((comment, index) => (
-            <div className="comment">
+            <div className="comment" key={comment.id}>
               <div>Subject: {comment.name}</div>
               <p>Comment: {comment.body}</p>
               <div>Email: {comment.email}</div>

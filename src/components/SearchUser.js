@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { debounce, throttle } from "lodash";
+import { debounce } from "lodash";
 
 const SearchUser = ({ users }) => {
   const [filteredUsers, setfilteredUsers] = useState([]);
@@ -42,7 +42,7 @@ const SearchUser = ({ users }) => {
         })}
       </ul>
     ) : (
-      <div className="no-options">
+      <div className="no-search-result">
         <em>No Users!</em>
       </div>
     );
